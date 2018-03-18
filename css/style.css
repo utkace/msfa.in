@@ -259,7 +259,7 @@ section {
 /************* ABOUT SECTION *************/
 /*******************************************/
 #about {
-
+  text-align: justify;
 }
 
 .parallax-window, .parallax-adventages {
@@ -293,7 +293,7 @@ section {
     content: '';
     position: absolute;
     width: 100%;
-    background: url(../img/favicon.png);
+    background: url();
     background-size: cover;
     background-position: center;
     opacity: 0.1;
@@ -304,7 +304,7 @@ section {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 60%;
     left: 50%;
 }
 
@@ -320,75 +320,9 @@ section {
     font-size: 18px;
 }
 
-.social-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #a81d00;
-    opacity: 0;
-    left: -100%;
-    transition: all .8s ease;
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    -o-transition: all .8s ease;
-
-}
-
-.social-overlay ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.social-overlay li {
-    color: #000;
-    font-size: 45px;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.social-overlay a {
-    color: #333;
-    transition: all .8s ease;
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    -o-transition: all .8s ease;
-}
-
-.social-overlay a:hover {
-    color: #000;
-}
-
 .remove-padding:hover .social-overlay {
     opacity: 0.8;
     left: 0;
-}
-
-/*******************************************/
-/************* SERVICES SECTION *************/
-/*******************************************/
-
-.normal-section-title {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 200;
-    letter-spacing: 5px;
-    margin: 0;
-    text-align: center;
-}
-
-.normal-section-subtitle {
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    color: #a81d00;
-    font-size: 50px;
-    margin-bottom: 30px;
 }
 
 /*******************************************/
@@ -400,7 +334,10 @@ section {
 }
 
 .adventages-content {
-    width: 50%;
+    width: 70%;
+    text-align:justify;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
 }
 
 .adventages-content h1 {
@@ -687,35 +624,35 @@ section {
 }
 
 /*LIST SLIDER*/
-.MultiCarousel 
-{ 
-    float: left; 
-    overflow: hidden; 
-    padding: 15px; 
-    width: 100%; 
+.MultiCarousel
+{
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
     position:relative;
 }
-.MultiCarousel .MultiCarousel-inner 
-{ 
-    transition: 1s ease all; 
-    float: left; 
-}
-
-.MultiCarousel .MultiCarousel-inner .item 
-{ 
+.MultiCarousel .MultiCarousel-inner
+{
+    transition: 1s ease all;
     float: left;
 }
-.MultiCarousel .MultiCarousel-inner .item > div 
-{ 
-    text-align: center; 
-    padding:10px; 
-    margin:10px; 
-    background:#f1f1f1; 
+
+.MultiCarousel .MultiCarousel-inner .item
+{
+    float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div
+{
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    background:#f1f1f1;
     color:#666;
 }
-.MultiCarousel .leftLst, .MultiCarousel .rightLst 
-{ 
-    position:absolute; 
+.MultiCarousel .leftLst, .MultiCarousel .rightLst
+{
+    position:absolute;
 /*    top:calc(50% - 20px);*/
     color: white;
     height: 100%;
@@ -733,21 +670,21 @@ section {
 {
     left: 30%;
 }
-.MultiCarousel .leftLst 
-{ 
-    left:0; 
+.MultiCarousel .leftLst
+{
+    left:0;
     background:  linear-gradient(90deg, black, rgba(0,0,0,0));
 }
-.MultiCarousel .rightLst 
-{ 
-    right:0; 
+.MultiCarousel .rightLst
+{
+    right:0;
     background:  linear-gradient(-90deg, black, rgba(0,0,0,0));
 }
-    
-.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over 
-{ 
-    pointer-events: none; 
-    background:#ccc; 
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over
+{
+    pointer-events: none;
+    background:#ccc;
 }
 
 .pad15 img
@@ -796,11 +733,11 @@ section {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 768px)
 {
     .carousel-inner .item img
     {
-        padding-left: 0%; 
+        padding-left: 0%;
     }
     .modal-half-2 p
     {
@@ -809,7 +746,7 @@ section {
         font-size:15px;
         font-family:Century gothic;
     }
-    
+
     .project-header
     {
         font-size: 20px;
