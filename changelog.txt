@@ -1,0 +1,14 @@
+==CHANGELOG==
+
+1. Slider Images Updated
+2. Logo Updated
+3. Map Updated
+4. Footer Updated
+
+
+==Required in these parts==
+1. 1st Slider Image with Logo
+2. 2,3,4 Slider Image red effect to go with the site
+3. Red Shade fix (In style.css, the current shades of Red used is mentioned in the comment. Replace All to replace it in the page.)
+4. Contact Mailer Integration
+5. Slider Texts

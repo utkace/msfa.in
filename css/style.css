@@ -16,6 +16,12 @@
 	14. COMING SOON PAGE
 */
 
+/*
+#a81d00
+#C5170E
+#c12c1d
+*/
+
 /*******************************************/
 /************* GENERAL SECTION *************/
 /*******************************************/
@@ -79,7 +85,7 @@ header {
 
 .sticky {
     position: fixed;
-    background-color: #e19e20;
+    background-color: #a81d00;
     z-index: 99999;
 }
 
@@ -94,12 +100,12 @@ header {
 }
 
 .big {
-    max-width: 200px;
+    max-width: 100px;
     margin: 10px 0;
 }
 
 .small {
-    max-width: 100px;
+    max-width: 50px;
     margin: 10px 0;
 }
 
@@ -127,7 +133,7 @@ header {
 }
 
 a:hover {
-    color: #e19e20;
+    color: #a81d00;
 }
 
 .top-animate {
@@ -155,7 +161,7 @@ a:hover {
     width: 25px;
     height: 2px;
     border-radius: 10px;
-    background-color: #F9A530;
+    background-color: #C5170E;
 }
 
 .mid-menu {
@@ -163,7 +169,7 @@ a:hover {
     width: 25px;
     height: 2px;
     border-radius: 10px;
-    background-color: #F9A530;
+    background-color: #C5170E;
 }
 
 .bottom-menu {
@@ -171,7 +177,7 @@ a:hover {
     width: 25px;
     height: 2px;
     border-radius: 10px;
-    background-color: #F9A530;
+    background-color: #C5170E;
 }
 
 .menui {
@@ -206,7 +212,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #e19e20;
+    background: #a81d00;
     opacity: 1;
 }
 
@@ -303,7 +309,7 @@ section {
 }
 
 .about-content h1, .contact-content h1 {
-    color: #e19e20;
+    color: #a81d00;
     font-family: 'Dosis', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
@@ -318,7 +324,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #e19e20;
+    background: #a81d00;
     opacity: 0;
     left: -100%;
     transition: all .8s ease;
@@ -380,7 +386,7 @@ section {
 .normal-section-subtitle {
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    color: #e19e20;
+    color: #a81d00;
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -398,7 +404,7 @@ section {
 }
 
 .adventages-content h1 {
-    color: #e19e20;
+    color: #a81d00;
     font-family: 'Dosis', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
@@ -406,7 +412,7 @@ section {
 
 .number-box {
     float: left;
-    background: #e19e20;
+    background: #a81d00;
     padding: 5px;
     border-radius: 50%;
     width: 30px;
@@ -482,7 +488,7 @@ section {
     margin: 15px 0;
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
-    color: #e19e20;
+    color: #a81d00;
     font-weight: 300;
     bottom: 0;
     left: 0;
@@ -648,7 +654,7 @@ section {
 }
 
 .rating i {
-    color: #e19e20;
+    color: #a81d00;
 }
 
 .client-info {
@@ -866,7 +872,7 @@ section {
 .submit-button {
     margin-top: 30px;
     border: 0;
-    background: #e19e20;
+    background: #a81d00;
     color: #fff;
     font-family: 'Dosis', sans-serif;
     border-radius: 40px;
@@ -894,8 +900,7 @@ footer {
 }
 
 .footer-column-one img {
-    width: 300px;
-
+    width: 100px;
 }
 
 .footer-column-one p {
@@ -930,7 +935,7 @@ footer {
 }
 
 .footer-column-one i:hover {
-    color: #e19e20;
+    color: #a81d00;
 }
 
 .footer-column-two h4 {
@@ -964,14 +969,14 @@ footer {
 }
 
 .footer-column-three li {
-    border: 1px solid #e19e20;
+    border: 1px solid #a81d00;
     padding: 0px;
     margin: 10px 0;
     font-family: 'Dosis', sans-serif;
 }
 
 .footer-column-three i {
-    background: #e19e20;
+    background: #a81d00;
     padding: 12px;
     font-size: 18px;
     width: 41px;
@@ -1023,7 +1028,7 @@ footer {
     height: 50px;
     padding: 4px;
     text-align: center;
-    background: #e19e20;
+    background: #a81d00;
     font-weight: bold;
     color: #fffefe;
     text-decoration: none;
@@ -1084,38 +1089,38 @@ footer {
     width: .6em;
     height: .6em;
     margin: 3px;
-    background: #ffc222;
+    background: #c12c1d;
     border-radius: .6em;
     animation: loading 1s infinite alternate;
 }
 
 .loading span:nth-of-type(2) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 0.2s;
 }
 
 .loading span:nth-of-type(3) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 0.4s;
 }
 
 .loading span:nth-of-type(4) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 0.6s;
 }
 
 .loading span:nth-of-type(5) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 0.8s;
 }
 
 .loading span:nth-of-type(6) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 1.0s;
 }
 
 .loading span:nth-of-type(7) {
-    background: #C88A12;
+    background: #c12c1d;
     animation-delay: 1.2s;
 }
 
