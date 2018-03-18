@@ -254,6 +254,27 @@ section {
     margin: 120px 0;
 }
 
+/*******************************************/
+/************* SERVICES SECTION *************/
+/*******************************************/
+
+.normal-section-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.normal-section-subtitle {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: #e19e20;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
 
 /*******************************************/
 /************* ABOUT SECTION *************/
