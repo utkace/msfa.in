@@ -30,9 +30,7 @@
     <!-- -Bootstrap v4.0.0- -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Slick -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+
     <!-- -Custom style CSS- -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- -Custom responsive style CSS- -->
@@ -51,7 +49,7 @@
 <!-- LOADER -->
 <div class="loading">
     <div class="animation">
-        <img src="img/logo.png" alt="Enactus NIEC">
+        <img src="img/favicon.png" alt="Enactus NIEC">
         <span></span>
         <span></span>
         <span></span>
@@ -59,7 +57,7 @@
     </div>
 </div>
 <!-- HEADER BEGIN -->
-<header class="header">
+<header class="header" id = "header">
     <div class="container">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="logo">
@@ -71,9 +69,10 @@
                 <ul>
                     <li><a href="#" data-scroll>Home</a></li>
                     <li><a href="#about" data-scroll>About</a></li>
-                    <li><a href="#team" data-scroll>Gallery</a></li>
+                    <li><a href="#gallery" data-scroll>Gallery</a></li>
+                    <li><a href="#courses" data-scroll>Courses</a></li>
                     <li><a href="#testimonials" data-scroll>Testimonials</a></li>
-                    <li><a href="#project" data-scroll>Media</a></li>
+                    <li><a href="#media" data-scroll>Media</a></li>
                     <li><a href="#contact" data-scroll>Contact</a></li>
                 </ul>
             </nav>
@@ -81,8 +80,8 @@
                 <ul>
                     <li class="close-menu"><a href="#" data-scroll>Home</a></li>
                     <li class="close-menu"><a href="#about" data-scroll>About</a></li>
-                    <li class="close-menu"><a href="#adventages" data-scroll>Aim</a></li>
                     <li class="close-menu"><a href="#team" data-scroll>Gallery</a></li>
+                    <li class="close-menu"><a href="#courses" data-scroll>Courses</a></li>
                     <li class="close-menu"><a href="#testimonials" data-scroll>Testimonials</a></li>
                     <li class="close-menu"><a href="#project" data-scroll>Media</a></li>
                     <li class="close-menu"><a href="#contact" data-scroll>Contact</a></li>
@@ -116,41 +115,6 @@
                         <img src="slider/images/demo/slide1.jpg" alt="" title="Home" data-bgposition="center center"
                              data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="4" class="rev-slidebg"
                              data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-1-layer-1"
-                            data-x="167"
-                            data-y="center" data-voffset="-75"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="300"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 5; white-space: nowrap; font-size: 130px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 0.90);font-family:Unica One;text-align:center;letter-spacing:50px; text-shadow: 2px 0 0 black">
-                            UPGRADE THE </h2>
-
-                        <!-- LAYER NR. 2 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-1-layer-2"
-                            data-x="243"
-                            data-y="center" data-voffset="85"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="800"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 6; white-space: nowrap; font-size: 136px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 1);font-family:Unica One;text-align:center;letter-spacing:130px; text-shadow: 2px 0 0 black">
-                            WORLD </h2>
                     </li>
                     <!-- SLIDE 2 -->
                     <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -163,42 +127,6 @@
                         <img src="slider/images/demo/slide2.jpg" alt="" title="Home" data-bgposition="center center"
                              data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="4" class="rev-slidebg"
                              data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-2-layer-1"
-                            data-x="178"
-                            data-y="center" data-voffset="25"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="300"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 5; white-space: nowrap; font-size: 136px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 1.00);font-family:Unica One;text-align:center; text-shadow: 2px 0 0 black">
-                            LET'S TALK BUSINESS </h2>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme" id="slide-2-layer-2"
-                             data-x="center"
-                             data-hoffset=""
-                             data-y="325"
-                             data-width="['auto']"
-                             data-height="['auto']"
-                             data-transform_idle="o:1;"
-                             data-transform_in="y:-50px;opacity:0;s:1200;e:Power3.easeInOut;"
-                             data-transform_out="opacity:0;s:300;"
-                             data-start="2000"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-responsive_offset="on"
-                             style="z-index: 6; white-space: nowrap; font-size: 16px; line-height: 16px; font-weight: 400; color: rgba(255, 255, 255, 0.90);letter-spacing:2px;">
-                            TOGETHER WE CAN ACHIEVE MORE
-                        </div>
                     </li>
                     <!-- SLIDE 3 -->
                     <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -211,41 +139,6 @@
                         <img src="slider/images/demo/slide3.jpg" alt="" title="Home" data-bgposition="center center"
                              data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="4" class="rev-slidebg"
                              data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-3-layer-1"
-                            data-x="167"
-                            data-y="center" data-voffset="-75"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="300"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 5; white-space: nowrap; font-size: 130px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 0.90);font-family:Unica One;text-align:center;letter-spacing:50px; text-shadow: 2px 0 0 black;">
-                            THE WORLD </h2>
-
-                        <!-- LAYER NR. 2 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-3-layer-2"
-                            data-x="center"
-                            data-y="center" data-voffset="85"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="800"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 6; white-space: nowrap; font-size: 136px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 1);font-family:Unica One;text-align:center;letter-spacing:100px; text-shadow: 2px 0 0 black;">
-                            NEEDS US </h2>
                     </li>
                     <!-- SLIDE 4 -->
                     <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -258,24 +151,6 @@
                         <img src="slider/images/demo/slide4.jpg" alt="" title="Home" data-bgposition="center center"
                              data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="4" class="rev-slidebg"
                              data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <h2 class="tp-caption tp-resizeme" id="slide-4-layer-1"
-                            data-x="center"
-                            data-y="center" data-voffset="25"
-                            data-width="['auto']"
-                            data-height="['auto']"
-                            data-transform_idle="o:1;"
-                            data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;"
-                            data-transform_out="opacity:0;s:300;"
-                            data-start="300"
-                            data-splitin="chars"
-                            data-splitout="none"
-                            data-responsive_offset="on"
-                            data-elementdelay="0.1"
-                            style="z-index: 5; white-space: nowrap; font-size: 136px; line-height: 140px; font-weight: 400; color: rgba(239, 242, 255, 1.00);font-family:Unica One;text-align:center; text-shadow: 2px 0 0 black">
-                            TAKE THE RIGHT ACTION </h2>
                     </li>
                 </ul>
             </div><!-- END REVOLUTION SLIDER -->
@@ -283,6 +158,7 @@
     </div>
 </div>
 <div class="clearfix"></div>
+
 <!-- ABOUT SECTION -->
 <section id="about">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding">
@@ -310,10 +186,10 @@
         </div>
     </div>
 </section>
-<!-- ADVENTAGES SECTION -->
-<section id="adventages">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 remove-padding bckgr">
-        <div class="adventages-content">
+<!-- ABOUT-2 -->
+<section id="about-2">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 bckgr">
+        <div class="about-2-content">
             <p>Mr. Ganga Narayan Maharana who was born in 1967 hails from the state of Orissa.
               Since his childhood he nurtured a dream of painting and making innovations in art.
               Inspite of some initial resistance for his family he pursued art wth passion, as he
@@ -323,9 +199,11 @@
               Art teacher at Apeejay School.
 
               He guides many new budding artists to achieve their goals. Many of his students get selected in Fashion Design
-              and Interior College of Art and Polytechnique.</p>
+              and Interior College of Art and Polytechnique.<br>
+              <a href=""><i>Read More... </i></a>
+            </p>
 
-            <a href=""><i>Read More - </i></a>
+
         </div>
     </div>
 
@@ -333,441 +211,146 @@
         <div class="parallax-adventages" data-parallax="scroll" data-image-src="img/ab2.jpg"></div>
     </div>
 </section>
-<!-- OUR TEAM SECTION -->
-<section class="track" id="courses">
-    <div class="container">
-
-
+<!-- COURSES SECTION -->
+<section id="courses">
+  <div class="container-fluid">
+<div class="row">
+  <h4 class="normal-section-subtitle">Courses</h4>
+  <div class = "container-fluid">
+    <h4 class="content-section-subtitle">Seniors</h4>
+    <div class = "col-md-3 course-content">
+      <p><b>Elements of Arts:</b></p>
+      <ul>
+        <li>Lines</li>
+        <li>Shape</li>
+        <li>Perspective</li>
+        <li>Proportion</li>
+        <li>Harmony</li>
+        <li>Texture</li>
+        <li>Balance</li>
+        <li>Space</li>
+        <li>Drawing Materials(Equipments)</li>
+        <li>Drawing Terms</li>
+      </ul>
     </div>
+    <div class = "col-md-3 course-content">
+      <p><b>How to Draw (Step by Step):</b></p>
+      <ul>
+        <li>Flowers</li>
+        <li>Fruits and fruit composition</li>
+        <li>Birds</li>
+        <li>Animals</li>
+        <li>Trees</li>
+        <li>Poster Colour</li>
+      </ul>
+    </div>
+
+    <div class = "col-md-3 course-content">
+      <p><b>Landscape(Step by Step):</b></p>
+      <ul>
+        <li>Human Square( how to draw)</li>
+        <li>Memory Drawing</li>
+        <li>Pattern Designing</li>
+        <li>Based on Geometrical shapes</li>
+        <li>Free hand drawing</li>
+      </ul>
+    </div>
+
+    <div class = "col-md-3 course-content">
+      <p><b>Mixed Bag:</b></p>
+      <ul>
+        <li>Greeting Card</li>
+        <li>Story Board</li>
+        <li>Paper Collage</li>
+        <li>Photo Collage</li>
+        <li>Cartoon Drawing</li>
+        <li>Air Blow Technique</li>
+        <li>Poster Designing & all types of Painting</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class = "container-fluid">
+    <h4 class="content-section-subtitle">Juniors</h4>
+    <div class = "col-md-3 course-content">
+      <p><b>Elements of Arts:</b></p>
+      <ul>
+        <li>Lines</li>
+        <li>Shape</li>
+        <li>Perspective</li>
+        <li>Proportion</li>
+        <li>Harmony</li>
+        <li>Texture</li>
+        <li>Balance</li>
+        <li>Space</li>
+        <li>Drawing Materials(Equipments)</li>
+        <li>Drawing Terms</li>
+      </ul>
+    </div>
+    <div class = "col-md-3 course-content">
+      <p><b>How to Draw(Step-by-Step):</b></p>
+      <ul>
+        <li>Free hand Sketching</li>
+        <li>Rapid Sketching</li>
+        <li>Pencil Composition</li>
+        <li>Pencil Shading</li>
+        <li>Still life Study(Pencil)</li>
+        <li>Life Study(Pencil, Indoor)</li>
+        <li>Outdoor Study(Pencil)</li>
+        <li>Memory Drawing Composition</li>
+      </ul>
+    </div>
+    <div class = "col-md-3 course-content">
+      <p><b>Water Color:</b></p>
+      <ul>
+        <li>still life</li>
+        <li>Memory composition</li>
+        <li>outdoor</li>
+        <li>life study</li>
+        <li>Potrait</li>
+      </ul>
+    </div>
+
+    <div class = "col-md-3 course-content">
+      <p><b>Poster Colour:</b></p>
+      <ul>
+        <li>Painting</li>
+        <li>Porter</li>
+        <li>Objects</li>
+        <li>Ladscapes</li>
+        <li>Birds and animals</li>
+      </ul>
+
+      <p><b>Acrylic Colour:</b></p>
+      <ul>
+        <li>Painting</li>
+        <li>Still life</li>
+        <li>Life Study</li>
+        <li>Composition</li>
+        <li> Potrait</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
-    <div class="parallax-testimonial" data-parallax="scroll" data-image-src="img/comments04.png">
-        <div class="container">
-            <div class="row aligner">
-                <h2 class="normal-section-title">
-                    Testimonials
-                </h2>
-                <h4 class="normal-section-subtitle">What people say about us</h4>
-                <div class="testimonials">
-                    <div class="the-testimonial">
-                        <p class="text-from-client">"It's not about ideas, It's about making these ideas happen. Being
-                            at enactus not only helps putting your ideas forth but the challenges faced,make you a more
-                            resourceful person- looking for possibilities rather than settling for what's in front of
-                            you. It is a grooming experience where you strive towards a noble aim and grow from
-                            within."</p>
-                        <div class="client-info">
-                            <img src="img/ss.png" alt="Photo">
-                            <h4>Sagarika Sachdeva
-                                <small>Enactus NIEC</small>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="the-testimonial">
-                        <p class="text-from-client">"Enactus NIEC, in a very short time has become like a family to me.
-                            Together, we learn, discuss and explore ideas to improve human conditions and enable
-                            sustainable human progress and then we work towards achieving it. I feel content to perceive
-                            how our small efforts can bring joy to the communities we help. Enactus NIEC serves as a
-                            platform for us to develop into more effective and value driven leaders."</p>
-                        <div class="client-info">
-                            <img src="img/ds.png" alt="Photo">
-                            <h4>Devina Shah
-                                <small>Vice President</small>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="the-testimonial">
-                        <p class="text-from-client">"Enactus means a lot to me since I have always been interested in
-                            entrepreneurial endeavours, and I have also been altruistic all my life. I don't think there
-                            is anything better than using business models to uplift society and help others, like we try
-                            to do in Enactus. This society makes me feel like a good person, and I feel that is what
-                            really matters!"</p>
-                        <div class="client-info">
-                            <img src="img/vy.png" alt="Photo">
-                            <h4>Vaibhav Yadav
-                                <small>Enactus NIEC</small>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+<div class="row">
+  <h4 class="normal-section-subtitle">What People Say About Us</h4>
+</div>
+</div>
 </section>
 
-<!--Projects-->
-<section id="project">
-    <div class = "container">
-        <div class="row">
-        <h2 class="normal-section-title">
-                Our Projects
-            </h2>
-            <h4 class="normal-section-subtitle">Our Efforts, The Magic Happens</h4>
-		    <div class="MultiCarousel" data-items="1,3,3,3" data-slide="1" id="MultiCarousel"  data-interval="1000">
-                <div class="MultiCarousel-inner">
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project1">
-                            <img src = "List-Slider/img/p1.jpg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project2">
-                            <img src = "List-Slider/img/p2.jpg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project3">
-                            <img src = "List-Slider/img/p3.jpg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project4">
-                            <img src = "List-Slider/img/p4.jpg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project5">
-                            <img src = "List-Slider/img/p5.jpg">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15" data-toggle="modal" data-target=".project6">
-                            <img src = "List-Slider/img/p6.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="leftLst"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></div>
-                <div class="rightLst"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
-            </div>
-	    </div>
-
-        <div class="modal fade project1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px; color: white">PROJECT RANGMANCH</h1></div>
-			<div class = "container-fluid">
-			    <div class = "row">
-				<div class = "modal-half-1 col-xs-12 col-md-8">
-				    <div id="projectpic-carousel" class="carousel slide" data-ride="carousel">
-				    <!-- Indicators -->
-					<ol class="carousel-indicators">
-					    <li data-target="#projectpic-carousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#projectpic-carousel" data-slide-to="1"></li>
-					    <li data-target="#projectpic-carousel" data-slide-to="2"></li>
-					</ol>
-
-				    <!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-					    <div class="item active">
-						<img src="img/rangmanch/rang2.jpg">
-					    </div>
-
-					    <div class="item">
-					      <img src="img/rangmanch/rang3.jpg">
-					    </div>
-
-					    <div class="item">
-					      <img src="img/rangmanch/rang4.jpg">
-					    </div>
-					</div>
-
-					<!-- Controls -->
-					<a class="left carousel-control" href="#projectpic-carousel" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#projectpic-carousel" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					</a>
-				    </div>
-				</div>
-				<div class = "modal-half-2 col-xs-12 col-md-4">
-				    <p>	With the aim of restoring social dignity Project Rangmanch
-				    endeavors to uplift underprivileged and commercially exploited
-				    women and enable them to become entrepreneurs, supplementing
-				    their income by providing them with the raw materials and
-				    techniques to make organic powdered colors (gulaal) for the
-				    festival of Holi. As a result of it, 5 entrepreneurs and an
-				    income of Rupees 5000 was generated and holi was made safer for the consumers.</p>
-				</div>
-			    </div>
-		    </div>
-                </div>
-            </div>
-        </div>
-
-	<div class="modal fade project2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-           <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px;">SANKALP</h1></div>
-           <div class = "row">
-            <div class = "modal-half-1 col-xs-12">
-                <div id="projectpic-carousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectpic-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="1"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/rangmanch/rang2.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang3.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang4.jpg">
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#projectpic-carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectpic-carousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-        </div>
-            <div class = "modal-half-2 col-xs-12">
-                <p>	With the aim of restoring social dignity Project Rangmanch
-                endeavors to uplift underprivileged and commercially exploited
-                women and enable them to become entrepreneurs, supplementing
-                their income by providing them with the raw materials and
-                techniques to make organic powdered colors (gulaal) for the
-                festival of Holi. As a result of it, 5 entrepreneurs and an
-                income of Rupees 5000 was generated and holi was made safer for the consumers.</p>
-            </div>
-        </div>
-    </div>
+<!--Media Section-->
+<section id="media">
+    <div class="container">
+  <div class="row">
+    <h4 class="normal-section-subtitle">Media</h4>
   </div>
 </div>
-
-	<div class="modal fade project3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-           <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px;">E-STORE</h1></div>
-           <div class = "row">
-            <div class = "modal-half-1 col-xs-12">
-                <div id="projectpic-carousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectpic-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="1"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/rangmanch/rang2.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang3.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang4.jpg">
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#projectpic-carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectpic-carousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-        </div>
-            <div class = "modal-half-2 col-xs-12">
-                <p>	With the aim of restoring social dignity Project Rangmanch
-                endeavors to uplift underprivileged and commercially exploited
-                women and enable them to become entrepreneurs, supplementing
-                their income by providing them with the raw materials and
-                techniques to make organic powdered colors (gulaal) for the
-                festival of Holi. As a result of it, 5 entrepreneurs and an
-                income of Rupees 5000 was generated and holi was made safer for the consumers.</p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-	<div class="modal fade project4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-           <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px;">FOOD DRIVE</h1></div>
-           <div class = "row">
-            <div class = "modal-half-1 col-xs-12">
-                <div id="projectpic-carousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectpic-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="1"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/rangmanch/rang2.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang3.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang4.jpg">
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#projectpic-carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectpic-carousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-        </div>
-            <div class = "modal-half-2 col-xs-12">
-                <p>	With the aim of restoring social dignity Project Rangmanch
-                endeavors to uplift underprivileged and commercially exploited
-                women and enable them to become entrepreneurs, supplementing
-                their income by providing them with the raw materials and
-                techniques to make organic powdered colors (gulaal) for the
-                festival of Holi. As a result of it, 5 entrepreneurs and an
-                income of Rupees 5000 was generated and holi was made safer for the consumers.</p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-	<div class="modal fade project5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-           <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px;">ENVELOPE DESIGN COMPETITION</h1></div>
-           <div class = "row">
-            <div class = "modal-half-1 col-xs-12">
-                <div id="projectpic-carousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectpic-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="1"></li>
-                    <li data-target="#projectpic-carousel" data-slide-to="2"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/rangmanch/rang2.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang3.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/rangmanch/rang4.jpg">
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#projectpic-carousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectpic-carousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-        </div>
-            <div class = "modal-half-2 col-xs-12">
-                <p>	With the aim of restoring social dignity Project Rangmanch
-                endeavors to uplift underprivileged and commercially exploited
-                women and enable them to become entrepreneurs, supplementing
-                their income by providing them with the raw materials and
-                techniques to make organic powdered colors (gulaal) for the
-                festival of Holi. As a result of it, 5 entrepreneurs and an
-                income of Rupees 5000 was generated and holi was made safer for the consumers.</p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-	<div class="modal fade project6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-           <div class="modal-header"><h1 class = "project-header"style = "font-family:Century gothic; text-align: center; margin: 0px;">DIYA DONATION DRIVE</h1></div>
-           <div class = "row">
-            <div class = "modal-half-1 col-xs-12">
-                <div id="projectpic-carousel-6" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectpic-carousel-6" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectpic-carousel-6" data-slide-to="1"></li>
-                    <li data-target="#projectpic-carousel-6" data-slide-to="2"></li>
-                    <li data-target="#projectpic-carousel-6" data-slide-to="3"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/diya/diya1.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/diya/diya2.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/diya/diya4.jpg">
-                    </div>
-
-                    <div class="item">
-                      <img src="img/diya/diya5.jpg">
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#projectpic-carousel-6" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectpic-carousel-6" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-            </div>
-        </div>
-            <div class = "modal-half-2 col-xs-12">
-                <p>	The NIEC-Enactus team went for the Diya Donation Drive in an underprivileged area, to apportion the collection of Diyas and chocolates that were solicited. The eyes that were wary and cautious of the bourgeois, were grateful after receiving the gifts. They expressed their gratitude and our team was pleased they could bring happiness in their lives.</p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-    </div>
 </section>
 
 <!-- Contacts -->
@@ -1054,12 +637,16 @@ The following part can be removed on Server for On Demand Loading) -->
                 Logo.className = 'small transition';
             }
         };
+
         function growShrinkLogo() {
             var Logo = document.getElementById("Logo1");
+            var Header = document.getElementById("header");
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                Logo.className = 'small transition';
+                Logo.className = 'small transition visible';
+                Header.className = 'header head-col';
             } else {
                 Logo.className = 'big transition';
+                Header.className = 'header';
             }
         }
     })

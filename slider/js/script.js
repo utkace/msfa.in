@@ -1,4 +1,4 @@
-/*  Table of Contents 
+/*  Table of Contents
 01. MENU ACTIVATION
 02. FITVIDES RESPONSIVE VIDEOS
 03. MOBILE MENU
@@ -34,12 +34,6 @@ jQuery(document).ready(function($) {
 
 
 /*
-=============================================== 02. FITVIDES RESPONSIVE VIDEOS  ===============================================
-*/
-    $(".featured-blog-pro, .summary-post-pro, .invested-portfolio-feature, .invested-video-container .progression-video-bg, .page-content-pro ").fitVids();
-
-
-/*
 =============================================== 03. MOBILE MENU  ===============================================
 */
     $('ul.mobile-menu-pro').slimmenu({
@@ -53,7 +47,7 @@ jQuery(document).ready(function($) {
 
 /*
 =============================================== 04. SHOW/HIDE MOBILE MENU  ===============================================
-*/	
+*/
     var clickOrTouch = (('ontouchend' in window)) ? 'touchend' : 'click';
 
     $(".mobile-menu-icon-pro").on(clickOrTouch, function(e) {
@@ -64,24 +58,24 @@ jQuery(document).ready(function($) {
 
 /*
 =============================================== 05. GALLERY JS  ===============================================
-*/	
+*/
     $('.gallery-progression').flexslider({
-        animation: "fade",      
-        slideDirection: "horizontal", 
-        slideshow: false,   
-        slideshowSpeed: 7000,  
-        animationDuration: 200,        
-        directionNav: true,             
+        animation: "fade",
+        slideDirection: "horizontal",
+        slideshow: false,
+        slideshowSpeed: 7000,
+        animationDuration: 200,
+        directionNav: true,
         controlNav: true,
-        prevText: "",    
-        nextText: "", 
+        prevText: "",
+        nextText: "",
     });
 
 
 
 /*
 =============================================== 06. STICKY MENU JS  ===============================================
-*/	
+*/
     if ($(this).width() > 959) {
         $('#sticky-header-pro').scrollToFixed();
     }
@@ -100,7 +94,7 @@ jQuery(document).ready(function($) {
                 header.removeClass("menu-resized-pro").addClass('menu-default-pro');
             }
 
-        } 
+        }
 
     });
 
@@ -132,7 +126,7 @@ jQuery(document).ready(function($) {
     //hide or show the "back to top" link
     $(window).scroll(function(){
         ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if( $(this).scrollTop() > offset_opacity ) { 
+        if( $(this).scrollTop() > offset_opacity ) {
             $back_to_top.addClass('cd-fade-out');
         }
     });
@@ -148,27 +142,8 @@ jQuery(document).ready(function($) {
 
 
 /*
-=============================================== 08. prettyPhoto JS  ===============================================
-*/
-
-    $(".type-portfolio  a[data-rel^='prettyPhoto'], .featured-blog-pro a[data-rel^='prettyPhoto'],.images a[data-rel^='prettyPhoto'], .progression-featured-portfolio-single a[data-rel^='prettyPhoto']").prettyPhoto({
-        hook: 'data-rel',
-        animation_speed: 'fast', /* fast/slow/normal */
-        slideshow: 5000, /* false OR interval time in ms */
-        show_title: false, /* true/false */
-        deeplinking: false, /* Allow prettyPhoto to update the url to enable deeplinking. */
-        overlay_gallery: false, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
-        custom_markup: '',
-        default_width: 900,
-        default_height: 506,
-        social_tools: '' /* html or false to disable */
-    });
-
-
-
-/*
 =============================================== 09. Match Height  ===============================================
-*/	
+*/
 
     $(function() {
         $('.equal-height-progression').matchHeight({
@@ -183,17 +158,6 @@ jQuery(document).ready(function($) {
 
 
     $("#CommentForm").validate();
-
-    
-/*
-=============================================== 11. Background Images  ===============================================
-*/
-    $("body.home .homepage-highlight-pro").backstretch([ "images/demo/investmen-tquote.jpg" ],{ fade: 750, centeredY:true }); 
-    $("body.approach .highlight-approach-1").backstretch([ "images/demo/approach-1.jpg" ],{ fade: 750, centeredY:true }); 
-    $("body.approach .highlight-approach-2").backstretch([ "images/demo/shutterstock_71757706.jpg" ],{ fade: 750, centeredY:true }); 
-    $("body.approach .highlight-approach-3").backstretch([ "images/demo/skyline-taller.jpg" ],{ fade: 750, centeredY:false }); 
-    $("body.contact .progression-contact-img-1").backstretch([ "images/demo/sf.jpg" ],{ fade: 750, centeredY:false }); 
-
 
 /*
 =============================================== 12. Light Shortcodes  ===============================================
