@@ -268,6 +268,7 @@ section {
 /*******************************************/
 
 .normal-section-subtitle {
+    padding-top: 8%;
     width: 100%;
     text-align: center;
     font-family: 'Dosis', sans-serif;
@@ -280,13 +281,15 @@ section {
 /************* ABOUT SECTION *************/
 /*******************************************/
 #about {
-  padding-top: 10%;
-  padding-bottom: 5%;
   text-align: justify;
 }
 
 #about .parallax-window, .parallax-adventages {
     height: 85vh;
+}
+
+.about-content{
+  padding-top: 10%;
 }
 
 .section-title {
@@ -402,9 +405,9 @@ section {
 /*******************************************/
 #courses
 {
-  padding-top: 10%;
-  padding-bottom: 5%;
   min-height: 700px;
+  padding-bottom: 5%;
+  background: #f5f5f5;
 }
 
 .content-section-subtitle{
@@ -423,21 +426,23 @@ section {
 /*******************************************/
 #testimonials
 {
-  padding-top: 10%;
-  padding-bottom: 5%;
   min-height: 700px;
+    padding-bottom: 5%;
 }
 /*******************************************/
 /************* MEDIA SECTION *************/
 /*******************************************/
 #media
 {
-    padding-top: 10%;
-    padding-bottom: 5%;
     min-height: 700px;
+      padding-bottom: 5%;
 }
 
-
+.slick-arrow{
+  color:black;
+  background-color: black;
+  z-index: 999;
+}
 
 /*******************************************/
 /************* CONTACT SECTION **********/
