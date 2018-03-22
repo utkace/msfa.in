@@ -103,7 +103,7 @@
     $(single_image_parallax).parallax();
 
 
-//////// -Slick Slider for Testimonials- /////////
+/*//////// -Slick Slider for Testimonials- /////////
     var testim = $('.testimonials');
     $(testim).slick({
         centerMode: true,
@@ -200,7 +200,7 @@
                 }
             }
         ]
-    });
+    });*/
 
 })(jQuery);
 
