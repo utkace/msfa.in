@@ -405,7 +405,6 @@ section {
 #courses
 {
   min-height: 700px;
-  padding-bottom: 5%;
   background: #f5f5f5;
 }
 
@@ -418,6 +417,14 @@ section {
   color: white;
   font-size: 28px;
   margin-bottom: 30px;
+}
+
+.alt{
+    background: white;
+}
+
+.course-content h4{
+  font-family: 'Dosis', sans-serif;
 }
 
 /*******************************************/
@@ -464,6 +471,9 @@ section {
 
 .slick-dots{
     position: initial;
+}
+
+.slick-active{
 }
 
 /*******************************************/

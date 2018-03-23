@@ -221,10 +221,10 @@
     <div class="container-fluid">
         <div class="row">
             <h4 class="normal-section-subtitle">COURSES</h4>
-            <div class="container-fluid">
-                <h4 class="content-section-subtitle">Seniors</h4>
-                <div class="col-md-3 course-content">
-                    <p><b>Elements of Arts:</b></p>
+            <div class="container-fluid course-container" style = "padding: 0px">
+                <h4 class="content-section-subtitle" style = "margin: 0px">Seniors</h4>
+                <div class="col-md-3 course-content alt">
+                    <h4><b>Elements of Arts:</b></h4>
                     <ul>
                         <li>Lines</li>
                         <li>Shape</li>
@@ -239,7 +239,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 course-content">
-                    <p><b>How to Draw (Step by Step):</b></p>
+                    <h4><b>How to Draw (Step by Step):</b></h4>
                     <ul>
                         <li>Flowers</li>
                         <li>Fruits and fruit composition</li>
@@ -250,8 +250,8 @@
                     </ul>
                 </div>
 
-                <div class="col-md-3 course-content">
-                    <p><b>Landscape(Step by Step):</b></p>
+                <div class="col-md-3 course-content alt">
+                    <h4><b>Landscape(Step by Step):</b></h4>
                     <ul>
                         <li>Human Square( how to draw)</li>
                         <li>Memory Drawing</li>
@@ -262,7 +262,7 @@
                 </div>
 
                 <div class="col-md-3 course-content">
-                    <p><b>Mixed Bag:</b></p>
+                    <h4><b>Mixed Bag:</b></h4>
                     <ul>
                         <li>Greeting Card</li>
                         <li>Story Board</li>
@@ -275,10 +275,10 @@
                 </div>
             </div>
 
-            <div class="container-fluid">
-                <h4 class="content-section-subtitle">Juniors</h4>
-                <div class="col-md-3 course-content">
-                    <p><b>Elements of Arts:</b></p>
+            <div class="container-fluid course-container" style = "padding: 0px">
+                <h4 class="content-section-subtitle" style = "margin: 0px">Juniors</h4>
+                <div class="col-md-3 course-content alt">
+                    <h4><b>Elements of Arts:</b></h4>
                     <ul>
                         <li>Lines</li>
                         <li>Shape</li>
@@ -293,7 +293,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 course-content">
-                    <p><b>How to Draw(Step-by-Step):</b></p>
+                    <h4><b>How to Draw(Step-by-Step):</b></h4>
                     <ul>
                         <li>Free hand Sketching</li>
                         <li>Rapid Sketching</li>
@@ -305,8 +305,8 @@
                         <li>Memory Drawing Composition</li>
                     </ul>
                 </div>
-                <div class="col-md-3 course-content">
-                    <p><b>Water Color:</b></p>
+                <div class="col-md-3 course-content alt">
+                    <h4><b>Water Color:</b></h4>
                     <ul>
                         <li>still life</li>
                         <li>Memory composition</li>
@@ -317,7 +317,7 @@
                 </div>
 
                 <div class="col-md-3 course-content">
-                    <p><b>Poster Colour:</b></p>
+                    <h4><b>Poster Colour:</b></h4>
                     <ul>
                         <li>Painting</li>
                         <li>Porter</li>
@@ -326,7 +326,7 @@
                         <li>Birds and animals</li>
                     </ul>
 
-                    <p><b>Acrylic Colour:</b></p>
+                    <h4><b>Acrylic Colour:</b></h4>
                     <ul>
                         <li>Painting</li>
                         <li>Still life</li>
@@ -705,6 +705,11 @@ The following part can be removed on Server for On Demand Loading) -->
     });
 </script>
 
+<script>
+  var ht = $('.course-container').height();
+  console.log(ht);
+  $('.course-content').css('height', ht);
+</script>
 <!-- ==== END JAVASCRIPT FILES ==== -->
 </body>
 </html>
