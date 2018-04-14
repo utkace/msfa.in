@@ -430,9 +430,35 @@ section {
 /*******************************************/
 /************* TESTIMONIAL SECTION **********/
 /*******************************************/
-#testimonials
+#testimonial-carousel
 {
-    padding-bottom: 5%;
+  border: 2px #a81d00 solid;
+  border-radius: 10px;
+  min-height: 400px;
+}
+.carousel-inner .item{
+  padding-left:12%;
+  padding-right:12%;
+  padding-top: 5%;
+  padding-bottom:5%;
+}
+
+.test-text{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-size: 1.12em;
+}
+
+.fa-quote-left, .fa-quote-right{
+  color: #a81d00;
+}
+
+.carousel .left, .carousel .right{
+  background-image: none;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left{
+  color:#a81d00;
 }
 /*******************************************/
 /************* MEDIA SECTION *************/

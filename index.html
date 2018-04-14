@@ -24,13 +24,13 @@
     <!-- -Font Awesome- -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
     <!-- -Ionicons- -->
     <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-    <!-- -Bootstrap v4.0.0- -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- -Bootstrap v3.3.7- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- ====== -Slider CSS- ====== -->
     <link rel="stylesheet" href="slider/style.css">
     <link rel="stylesheet" href="slider/css/responsive.css">
@@ -344,9 +344,60 @@
 <!-- TESTIMONIALS -->
 <section id="testimonials">
     <div class="container">
+
         <div class="row">
             <h4 class="normal-section-subtitle">WHAT PEOPLE SAY ABOUT US</h4>
         </div>
+
+        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+          <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active row">
+            <div class = "col-md-2"><img src = "img\john-doe.jpg"></div>
+            <div class = "col-md-10 test-text">
+
+              <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sit amet dignissim dolor, quis consequat justo.
+                Suspendisse consectetur gravida arcu vitae malesuada. Duis
+                non ex in diam dignissim auctor. Proin ac leo orci. Suspendisse
+                semper placerat urna. Nam facilisis lacus vitae dui tincidunt
+                venenatis. Nullam pharetra augue id massa cursus, sed maximus
+                diam venenatis. Etiam ut venenatis felis. Ut id est magna. <i class="fas fa-quote-right"></i></p>
+
+            </div>
+          </div>
+
+          <div class="item row">
+            <div class = "col-md-2"><img src = "img\john-doe.jpg"></div>
+            <div class = "col-md-10 test-text">
+              <p> <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum sit amet dignissim dolor, quis consequat justo.
+                Suspendisse consectetur gravida arcu vitae malesuada. Duis
+                non ex in diam dignissim auctor. Proin ac leo orci. Suspendisse
+                semper placerat urna. Nam facilisis lacus vitae dui tincidunt
+                venenatis. Nullam pharetra augue id massa cursus, sed maximus
+                diam venenatis. Etiam ut venenatis felis. Ut id est magna. <i class="fas fa-quote-right"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 </section>
 
@@ -482,10 +533,10 @@
                     <p>Regd. no. - 5291</p>
 
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -533,8 +584,8 @@
 <!-- Jquery and Bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
 <!-- Smooth scroll-->
 <script src="js/smooth-scroll.js"></script>
 <!-- Parallax -->
