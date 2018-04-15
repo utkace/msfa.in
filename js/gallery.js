@@ -1,34 +1,42 @@
 var folders = ["folder1", "folder2", "folder3", "folder4"];
+var imgs = {};
 var imageItems = [];
 var dir = "gallery/large/";
-var tdir = "gallery/small/";
 var i=0;
 
+for(var j=0; j<folders.length; j++)
+    imgs[folders[j]] = [];
+
 function getImages(i) {
+    //var fakeName = ['A Random Name', 'Second Random Name', 'Third Random Name', 'Fourth Random Name', 'the Huhahalakajkahskj', 'sdjfkhsakjdfhjksdhfks'];
     $.ajax({
         url:dir+folders[i]+"/",
         //async: false,
         success: function (data) {
             // document.write(data);
+            var j = 1;
             $(data).find("a:contains(.png)").each(function () {
                 // create object
                 var imageUrl = this.href;
                 var filename = imageUrl.split("/");
                 filename = filename[filename.length-1];
-                var imageTitle = filename.split(".");
-                imageTitle = imageTitle[0];
                 imageUrl = imageUrl.replace(filename, dir+folders[i]+"/"+filename);
-                var imageObj = {
-                    'title': imageTitle,
-                    'thumbnail': imageUrl.replace("large", "small"), //['images/small/4.jpg', 'images/small/5.jpg', 'images/small/6.jpg', 'images/small/7.jpg'],
-                    'large': imageUrl, //['images/large/4.jpg', 'images/large/5.jpg', 'images/large/6.jpg', 'images/large/7.jpg'],
-                    'img_title': ['jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid', 'jquery elastic grid'],
+                var imgObj = {
+                    'title': folders[i] + " " + j,
+                    'url': imageUrl
+                };
+                imgs[folders[i]].push(imgObj);
+                j++;
+                /*var imageObj = {
+                    'title': fakeName[parseInt(imageTitle)],
+                    'thumbnail': [imageUrl.replace("large", "small"), imageUrl.replace("large", "small")],
+                    'large': [imageUrl, imageUrl],
+                    'img_title': [fakeName[parseInt(imageTitle)], fakeName[parseInt(imageTitle)]],
                     'button_list': [],
                     'tags': [folders[i]]
-                }
+                };
                 //console.log(imageObj);
-                imageItems.push(imageObj);
-                // $("#gallery-container").append("<img src='" + dir + folders[i] + "/" + filename + "'>");
+                imageItems.push(imageObj);*/
             });
         },
         error: function(e){
@@ -37,6 +45,55 @@ function getImages(i) {
         complete: function(d) {
             if(i<folders.length-1)
                 getImages(i+1);
+            else {
+                console.log(imgs);
+                for(var directory in imgs){
+                    var n = imgs[directory].length;  // number of images in directory
+                    //console.log(directory);
+                    var large= [];
+                    var thumbnails = [];
+                    var titles = [];
+                    // collect all urls and titles of the directory
+                    for(j=0; j<n; j++){
+                        large.push(imgs[directory][j].url);
+                        thumbnails.push(imgs[directory][j].url.replace("large", "small"));
+                        titles.push(imgs[directory][j].title);
+                    }
+                    for(j=0; j<n; j++){
+                        var ctitles = titles;
+                        var clarge = large;
+                        var cthumbnails = thumbnails;
+
+                        console.log(ctitles);
+
+                        var temp = ctitles[j];
+                        ctitles = ctitles.filter(item => item !== temp);
+                        ctitles.unshift(temp);
+
+                        temp = clarge[j];
+                        clarge = clarge.filter(item => item !== temp);
+                        clarge.unshift(temp);
+
+                        temp = cthumbnails[j];
+                        cthumbnails = cthumbnails.filter(item => item !== temp);
+                        cthumbnails.unshift(temp);
+
+                        console.log(ctitles);
+
+                        var imageObj = {
+                            'title': imgs[directory][j].title,
+                            'thumbnail': cthumbnails,
+                            'large': clarge,
+                            'img_title': ctitles,
+                            'button_list': [],
+                            'tags': [directory]
+                        };
+                        imageItems.push(imageObj);
+                    }
+                }
+                console.log(imageItems);
+                makeGrid();
+            }
         }
     });
     // console.log("Found " + images.length + " images in " + folders[i] + ".");
@@ -55,25 +112,24 @@ function makeGrid() {
     });
 }
 
-function fakeImages() {
+
+// Elastic Grid Testing by generating Fake images
+/*function fakeImages() {
     tags = ['portrait', 'landscape', 'hulalala'];
     for(var i=0; i<10; i++){
         var imageObj = {
             'title'         : 'Swiss chard pumpkin',
-            'description'   : 'description',
-            'thumbnail'     : ['gallery/small/folder1/3.png', 'gallery/small/folder1/3.png'],
-            'large'         : ['gallery/large/folder1/3.png', 'gallery/large/folder1/3.png'],
-            'img_title'     : ['title1', 'title', 'ftitle'],
-            'button_list'   : [ { 'title':'Demo', 'url' : 'http://bonchen.net/' }, { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}],
+            'thumbnail'     : ['http://localhost/msfa/gallery/small/folder1/3.png', 'http://localhost/msfa/gallery/small/folder1/2.png'],
+            'large'         : ['http://localhost/msfa/gallery/large/folder1/3.png', 'http://localhost/msfa/gallery/large/folder1/2.png'],
+            'img_title'     : ['title1', 'title'],
+            'button_list'   : [],
             'tags'          : [tags[Math.floor(Math.random()*3)]]
-        }
+        };
         imageItems.push(imageObj);
     }
-}
+    makeGrid();
+}*/
 
 $(document).ready(function () {
-    //getImages(0);
-    fakeImages();
-    console.log(imageItems);
-    makeGrid();
+    getImages(0);
 });
