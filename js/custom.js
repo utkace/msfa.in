@@ -4,12 +4,6 @@
 
     var $window = $(window);
 
-//////// -Preloader- /////////
-    $window.on('load', function () {
-        var loading = $('.loading');
-        $(loading).hide(); // Hide preloader when document is fully loaded
-    });
-
 //////// -Mobile Menu- /////////
     var icon = $(".icon");
     var mobnav = $(".mobilenav");
@@ -53,7 +47,6 @@
         } else {
             $(scrolls).fadeOut();
         }
-
     });
 
     $(scrolls).on('click', function () {
@@ -61,36 +54,6 @@
         return false;
     });
 
-
-//////// -Sticky Header- /////////
-    var scroll_position = 0;
-
-    if($(window).width()>768) {
-        $window.on('scroll', function () {
-            scroll_position = $(this).scrollTop();
-            var headers = $('.header');
-            if(scroll_position > 150) { // After scrolling above 300px height show the sticky menu
-                $(headers).css('position', 'fixed'); // Make header fixed position
-                $(headers).css('background', '#1a1919'); // Change the sticky header background
-                $(headers).css('z-index', '100');  // Stack order of the header
-            } else {
-                $(headers).css('position', 'absolute'); // Return to normal header under 300px height scroll
-                $(headers).css('background', 'transparent'); // Change to normal transparent background
-            }
-        });
-    } else {
-        var headers = $('.header');
-        $window.on('scroll', function () {
-            scroll_position = $(this).scrollTop();
-            if(scroll_position > 150) {
-                $(headers).css('position', 'fixed'); // Make header fixed position
-            } else {
-                $(headers).css('position', 'absolute'); // Return to normal header under 300px height scroll
-            }
-        });
-        $(headers).css('background', '#1a1919'); // Change the sticky header background
-        $(headers).css('z-index', '100');  // Stack order of the header
-    }
 
     //////// -Parallax Sections- /////////
     var first_parallax = $('.parallax-window');
