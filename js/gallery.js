@@ -1,4 +1,4 @@
-var folders = ["Free Art Education", "Seedling Exhibition 2013", "Seedling Exhibition 2015", "Singing Workshop"];
+var folders = ["Free_Art_Education", "Seedling_Exhibition_2013", "Seedling_Exhibition_2015", "Singing_Workshop"];
 var imgs = {};
 var imageItems = [];
 var dir = "gallery/large/";
@@ -21,6 +21,7 @@ function getImages(i) {
                 var filename = imageUrl.split("/");
                 filename = filename[filename.length-1];
                 imageUrl = imageUrl.replace(filename, dir+folders[i]+"/"+filename);
+
 
                 //console.log(dir+folders[i]+"/"+filename);
 
@@ -97,7 +98,7 @@ function getImages(i) {
 
                 //////// -Preloader- /////////
                 $('.loading').hide(); // Hide preloader when document is fully loaded
-                
+
                 makeGrid();
             }
         }

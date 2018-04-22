@@ -809,7 +809,7 @@ The following part can be removed on Server for On Demand Loading) -->
     var scroll_position = 0;
 
     if($(window).width()>768) {
-        $window.on('scroll', function () {
+        $(window).on('scroll', function () {
             scroll_position = $(this).scrollTop();
             var headers = $('.header');
             if(scroll_position > 150) { // After scrolling above 300px height show the sticky menu
@@ -823,7 +823,7 @@ The following part can be removed on Server for On Demand Loading) -->
         });
     } else {
         var headers = $('.header');
-        $window.on('scroll', function () {
+        $(window).on('scroll', function () {
             scroll_position = $(this).scrollTop();
             if(scroll_position > 150) {
                 $(headers).css('position', 'fixed'); // Make header fixed position
@@ -835,7 +835,7 @@ The following part can be removed on Server for On Demand Loading) -->
         $(headers).css('z-index', '100');  // Stack order of the header
     }
     //////// -Preloader- /////////
-    $window.on('load', function () {
+    $(window).on('load', function () {
         var loading = $('.loading');
         $(loading).hide(); // Hide preloader when document is fully loaded
     });
