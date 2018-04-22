@@ -443,6 +443,11 @@ section {
   padding-bottom:5%;
 }
 
+.carousel-inner .item .col-md-2 h4{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
 .test-text{
   font-family: 'Dosis', sans-serif;
   text-align: center;
