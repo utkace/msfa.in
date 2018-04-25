@@ -1,7 +1,7 @@
-var folders = ["Free_Art_Education", "Seedling_Exhibition_2013", "Seedling_Exhibition_2015", "Singing_Workshop"];
+var folders = ["Free_Art_Education", "Seedling_Exhibition_2013", "Singing_Workshop"];
 var imgs = {};
 var imageItems = [];
-var dir = "gallery/large/";
+var dir = "img/gallery/large/";
 var i=0;
 
 for(var j=0; j<folders.length; j++)
