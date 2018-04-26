@@ -95,6 +95,24 @@ function makeGrid() {
     });
 }
 
+function equalizeHeight(){
+    var images = $("#og-grid").find("img");
+    var heights = {};
+    var max;
+    for(var idx=0; idx<images.length; idx++){
+        var h = images[idx].height;
+        if(h in heights)
+            heights[h]++;
+        else
+            heights[h]=1;
+        if(max === undefined || heights[h] > heights[max])
+            max = h;
+    }
+    console.log(heights);
+    images.css("height", max);
+}
+
 $(document).ready(function () {
     getImages(0);
+    equalizeHeight();
 });
