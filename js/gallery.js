@@ -106,7 +106,8 @@ function equalizeHeight(){
             max = h;
     }
     console.log(heights);
-    images.css("height", max);
+    if(max !== 0)
+        images.css("height", max);
 }
 
 $(document).ready(function () {
