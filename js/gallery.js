@@ -76,9 +76,6 @@ function getImages() {
     }
     console.log(imageItems);
 
-    //////// -Preloader- /////////
-    $('.loading').hide(); // Hide preloader when document is fully loaded
-
     makeGrid();
 }
 
@@ -115,4 +112,6 @@ function equalizeHeight(){
 $(document).ready(function () {
     getImages(0);
     equalizeHeight();
+    // Stop Preloader
+    $('.loading').hide(); // Hide preloader when document is fully loaded
 });
