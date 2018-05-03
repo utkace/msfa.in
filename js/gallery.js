@@ -1,5 +1,5 @@
-let folders = ["Free_Art_Education", "Seedling_Exhibition_2013", "Singing_Workshop"];
-let numImg = [127, 29, 6];
+let folders = ["Classroom"];
+let numImg = [107];
 let imgs = {};
 let imageItems = [];
 let dir = "img/gallery/large/";
