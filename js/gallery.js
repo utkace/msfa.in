@@ -1,6 +1,6 @@
 let cont=" ";
 for (var i = 1; i <= 107; i++) {
-  cont += `<a data-fancybox="gallery" href="img/gallery/large/Classroom/Classroom (${i}).jpg" data-caption="Artist wants to convey..">'+'<img src="img/gallery/small/Classroom/Classroom (${i}).jpg"></a>`;
+  cont += `<a data-fancybox="gallery" href="img/gallery/large/Classroom/Classroom (${i}).jpg" data-caption="Artist wants to convey.."><img src="img/gallery/small/Classroom/Classroom (${i}).jpg"></a>`;
 }
 document.querySelector('.wrap').innerHTML = cont;
 
