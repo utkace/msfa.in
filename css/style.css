@@ -605,15 +605,14 @@ section {
 /************* GALLERY SECTION **********/
 /*******************************************/
 .up1{
-  position: absolute;
-  width:100%;
+    overflow: hidden;
 }
 .up{
   position: absolute;
   margin-left: 42%;
   margin-top: 30px;
 }
-.btn-secondary {
+.category-btn {
     font-size: 25px !important;
     background-color: red !important;
     border-radius: 16px !important;
@@ -622,18 +621,18 @@ section {
     outline: none !important;
 }
 
-.btn-secondary:hover{
+.category-btn:hover{
   background-color: white !important;
   color:black !important;
 }
 
 .wrap{
-  position: absolute;
-  margin-top: 120px;
+  margin: 120px auto;
   height: 80%;
   display: grid;
   grid-template-columns: repeat(4,2fr);
   grid-gap: 1.3em;
+  clear: both;
 }
 
 
@@ -641,13 +640,13 @@ section {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  transition: all 1.0s ease-in-out !important;
+  transition: all 1.0s ease-in-out;
 }
 
 /*wasn't working there img*/
  .wrap> a:hover img:hover{
   opacity: 0.3 !important;
-  transform: scale3d(1.1,1.16,1.15) !important;
+  transform: scale3d(1.1,1.16,1.15);
 }
 
 .wrap > a{
