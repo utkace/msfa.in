@@ -2,24 +2,22 @@
 	=== TABLE OF CONTENTS - HOMEPAGE ===
 	1. GENERAL
 	2. HEADER
-	3. SLIDER
-	4. ABOUT
-	5. VIDEO
-	6. SERVICES
-	7. ADVENTAGES
-	8. TEAM
-	9. TESTIMONIALS
-	10. PORTFOLIO
+	3. ABOUT
+  4. ABOUT-2
+	5. COURSES
+	6. TESTIMONIAL
+	7. MEDIA
+	8. CONTACT
+	9. GALLERY
+	10. CATALOG
 	11. FOOTER
 	12. PRELOADER
-	13. 404 PAGE
-	14. COMING SOON PAGE
 */
 
 /*
-#a81d00
-#C5170E
-#c12c1d
+#a81d00 - RED 1
+#C5170E - RED 2
+#c12c1d - RED 3
 */
 
 /*******************************************/
@@ -614,11 +612,12 @@ section {
 }
 .category-btn {
     font-size: 25px !important;
-    background-color: red !important;
+    background-color: #a81d00 !important;
     border-radius: 16px !important;
     transition: background-color 1s ease-in-out !important;
     text-decoration: none !important;
     outline: none !important;
+    color:white;
 }
 
 .category-btn:hover{
@@ -652,6 +651,47 @@ section {
 .wrap > a{
   text-decoration: none;
   outline: none;
+}
+
+/*******************************************/
+/***************** CATALOG ****************/
+/*******************************************/
+
+.catalog-box{
+  margin: 120px auto;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-gap: 1.3em;
+}
+
+
+.cat > a img{
+  width:auto;
+  height: 400px;
+  object-fit:contain;
+  margin: 10px;
+  transition: all 1.0s ease-in-out;
+}
+
+/*wasn't working there img*/
+ .cat> a:hover img:hover{
+  opacity: 0.3 !important;
+  transform: scale3d(1.1,1.16,1.15);
+}
+
+.cat > a{
+  text-decoration: none;
+  outline: none;
+}
+
+.cat a> h1{
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+  font-size: 30px;
+  color: #a81d00;
+  font-family: 'Dosis';
 }
 
 /*******************************************/
@@ -902,3 +942,22 @@ footer {
         opacity: 1;
     }
 }
+
+/*******************************************/
+/************ CUSTOM SCROLLBAR *************/
+/*******************************************/
+::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #a81d00;
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #c12c1d;
+    }
+    ::-webkit-scrollbar-track {
+      border-radius: 50px;
+      background: #666;
+      border: 2px solid #666;
+    }

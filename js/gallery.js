@@ -37,8 +37,6 @@ $('.ima1').click(function(){
   location.reload();
 });
 
-console.log(screen.height);
-
 $(document).ready(function () {
     // Stop Preloader
     $('.loading').hide(); // Hide preloader when document is fully loaded
